@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Log Table</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Id</th>
+      	<th>Timestamp</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+    	{% for val in list %}
+    		<tr>
+        		<td>{{val.id}}</td>
+        		<td>{{val.time_stamp}}</td>
+        		<td>{{val.first_name}}</td>
+        		<td>{{val.last_name}}</td>
+      		</tr>
+      	{% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

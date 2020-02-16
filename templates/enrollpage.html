@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enroll Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+      /* .content{
+  overflow: hidden;
+  width: 1200px;
+} */
+
+      body{
+        width: 100%;
+        background-image: url("../static/bg1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      #video{
+        height: 300px;
+        width: 320px;
+        background-color: #ccc;
+        margin: 15px;
+      }
+
+      .takevid{
+        display: inline-block;
+        align-items: center;
+        width: 700px;
+      }
+
+      #recorder{
+        margin-left: 30%;
+        margin-top: 180px;
+        height: 350px;
+        width: 350px;
+        background-color: black;
+      }
+
+      .record{
+        height: 75px;
+        width: 75px;
+        background-image: url("../static/recordbtn.png");
+        float: right;
+        margin-right: 40%; 
+        margin-top: -150px;
+        border: 3px solid #17a2b8;
+        border-radius: 8px;
+      }
+
+      .details{
+        margin-left: 100px;
+        display: inline-block;
+        width: 300px;
+        height: 500px;
+        margin-top: 130px;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid yellow;
+        background-color: white;
+      }
+      /*input[name="first"]{
+        margin-left: 80px;
+        height: 65px;
+        width: 220px;
+        padding-left: 8px;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        margin-top: 280px;
+        border: 10px solid yellow;
+      }*/
+
+      #submitbtn{
+        margin-top: -120px;
+        margin-left: 150px;
+        width: 100px;
+    }
+
+    form{
+      margin-left: 10%;
+      margin-top: 5%;
+    }
+
+    form input{
+      margin-left: 10%;
+    }
+    </style>
+
+    </script>
+  </head>
+  <body>
+    <!-- <div class="content"> -->
+
+    <div class="container-fluid">
+    <div class="takevid">
+      
+        <div id="recorder">
+          <button id = "start_recording" type="button" name="record" class="record" ></button>
+          <a id="download"></a>   
+          <img id="video" src="{{ url_for('video_viewer') }}"> 
+        </div>
+      
+    </div>
+      <form action="/welcome" >
+        <input type="text" name="first" placeholder="First Name" id = "first" required>
+        <input type="text" name="last" placeholder="Last Name" id = "last" required>
+        <input type="submit" name="button" class="btn btn-info" id="sub" value="Submit">
+      </form>
+
+    </div>  
+  <script type="text/javascript" src ="../static/i8.js"></script>
+  </body>
+</html>

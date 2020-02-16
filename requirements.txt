@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+numpy==1.17.2
+face_recognition==1.2.3
+Flask_SQLAlchemy==2.3.2
+Flask==1.1.1
+pyttsx3==2.81
+opencv_python==4.2.0.32
+flask_migrate==2.5.2
+=======
+opencv_python==4.1.1.26
+Flask_Migrate==2.5.2
+numpy==1.17.3
+face_recognition==1.2.3
+Flask==1.1.1
+Flask_SQLAlchemy==2.4.1
+>>>>>>> bf1938418df17f6a37942cb2cebad43af5a77566
+Pillow==7.0.0
+scikit_learn==0.22.1
